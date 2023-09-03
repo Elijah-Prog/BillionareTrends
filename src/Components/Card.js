@@ -26,7 +26,7 @@ const Card = ({item, navigation, index}) => {
           </Text>
         </View>
         <TouchableOpacity
-          className="bg-redprimary px-4 py-1.5 mt-2 w-32 justify-center items-center rounded-md flex-row space-x-2"
+          className="bg-redprimary px-4 py-2 mt-2 w-32 justify-center items-center rounded-full flex-row space-x-2"
           onPress={() =>
             navigation.navigate('NewsViewer', {
               url: item.url,
