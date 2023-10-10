@@ -118,7 +118,7 @@ const HomeScreen = ({navigation}) => {
             />
           </View>
 
-          <View className="mb-10">
+          <View className="mb-20">
             <FlatList
               showsVerticalScrollIndicator={false}
               data={Data}
