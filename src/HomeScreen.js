@@ -55,7 +55,7 @@ const HomeScreen = ({navigation}) => {
   const getData = async () => {
     setLaoding(true);
     const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=za&apiKey=65e815963ba94463a808c239f8a27639&category=${Category[Select].category}`,
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=65e815963ba94463a808c239f8a27639&category=${Category[Select].category}`,
     );
 
     const data = await response.json();
@@ -66,7 +66,7 @@ const HomeScreen = ({navigation}) => {
   const getData2 = async category => {
     setLaoding(true);
     const response = await fetch(
-      `https://newsapi.org/v2/top-headlines?country=za&apiKey=65e815963ba94463a808c239f8a27639&category=${category}`,
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=65e815963ba94463a808c239f8a27639&category=${category}`,
     );
 
     const data = await response.json();
